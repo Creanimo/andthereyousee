@@ -1,0 +1,23 @@
+{
+  "name": "andthenyousee",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Creanimo/andthenyousee#readme",
+  "bugs": {
+    "url": "https://github.com/Creanimo/andthenyousee/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Creanimo/andthenyousee.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "immer": "^10.1.1"
+  }
+}
