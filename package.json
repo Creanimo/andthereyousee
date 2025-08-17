@@ -1,23 +1,31 @@
 {
-  "name": "andthenyousee",
+  "name": "andthereyousee",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/Creanimo/andthenyousee#readme",
+  "homepage": "https://github.com/Creanimo/andthereyousee#readme",
   "bugs": {
-    "url": "https://github.com/Creanimo/andthenyousee/issues"
+    "url": "https://github.com/Creanimo/andthereyousee/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Creanimo/andthenyousee.git"
+    "url": "git+https://github.com/Creanimo/andthereyousee.git"
   },
   "license": "MIT",
   "author": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear:dist": "rm -rf dist && mkdir dist",
+    "build:sass": "npx sass src/style/style.scss dist/style/style.css",
+    "build:js": "rollup -c",
+    "build": "clear:dist && build:sass && build:js"
   },
   "devDependencies": {
-    "immer": "^10.1.1"
+    "immer": "^10.1.1",
+    "sass": "^1.90.0"
+  },
+  "dependencies": {
+    "webawesome": "^0.0.1"
   }
 }
