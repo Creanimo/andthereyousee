@@ -17,9 +17,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clear:dist": "rm -rf dist && mkdir dist",
-    "build:sass": "npx sass src/style/style.scss dist/style/style.css",
     "build:js": "rollup -c",
-    "build": "clear:dist && build:sass && build:js"
+    "build:html": "ROARR_LOG=true node src/view/NodeStaticHtmlRenderer.js | npx roarr pretty-print"
+    "build": "clear:dist && build:html && build:js"
   },
   "devDependencies": {
     "immer": "^10.1.1",
